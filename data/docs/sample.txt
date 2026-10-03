@@ -1,0 +1,7 @@
+FastAPI is a modern Python framework for building APIs.
+
+Gemini is Google's generative AI model.
+
+ChromaDB is a vector database used for Retrieval-Augmented Generation (RAG).
+
+Embeddings convert text into numerical vectors for semantic search.

@@ -1,0 +1,14 @@
+RAG Test Document
+
+RAG stands for Retrieval-Augmented Generation.
+
+RAG allows an AI system to retrieve relevant information from external documents before generating an answer.
+
+The three main steps of RAG are:
+1. Document loading
+2. Embedding and vector storage
+3. Retrieval and generation
+
+ChromaDB can be used as a vector database for storing document embeddings.
+
+Gemini can use the retrieved context to generate an answer based on the document.

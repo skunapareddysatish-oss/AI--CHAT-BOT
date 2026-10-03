@@ -1,0 +1,7 @@
+Gemini is Google's AI model.
+
+FastAPI is a Python web framework.
+
+RAG stands for Retrieval-Augmented Generation.
+
+Chatbots can answer questions using information from documents.

@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: advanced-ai-chatbot
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENWEATHER_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DB_PATH
+        value: /opt/render/project/src/storage/conversations.db
+      - key: CHROMA_PATH
+        value: /opt/render/project/src/storage/chroma_store
+    disk:
+      name: chatbot-data
+      mountPath: /opt/render/project/src/storage
+      sizeGB: 1
